@@ -1,0 +1,17 @@
+{
+  "name": "meow-debate-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @meow-debate-assistant/desktop",
+    "build": "npm run build --workspace @meow-debate-assistant/desktop",
+    "typecheck": "tsc --noEmit -p tsconfig.base.json",
+    "test": "tsx --test packages/core/tests/**/*.test.ts",
+    "lint": "tsc --noEmit -p tsconfig.base.json"
+  }
+}

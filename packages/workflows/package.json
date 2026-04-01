@@ -1,0 +1,6 @@
+{
+  "name": "@meow-debate-assistant/workflows",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module"
+}

@@ -47,3 +47,12 @@ Agent 在任务执行过程中发现的条目应遵循以下格式：
 - Instructions:
   - 当前仓库内容极少，根目录仅有 `README.md` 与 `LICENSE`，适合先从规格与架构文档开始建设。
   - 当前 Git 远程为 `origin https://github.com/xvkong233/MeowDebateAssistant.git`。
+
+[项目骨架与验证命令]
+- Date: 2026-04-01
+- Context: Agent 在执行任务 1「搭建桌面端项目骨架与共享核心模块」时发现
+- Category: 构建方法
+- Instructions:
+  - 项目当前采用 npm workspaces，桌面端位于 `apps/desktop`，共享核心位于 `packages/core`。
+  - 当前基础验证命令为 `npm run typecheck` 与 `npm run test`。
+  - 桌面端 Tauri 配置已放在 `apps/desktop/src-tauri/tauri.conf.json`，后续需在具备 Rust 工具链后接入真实构建。

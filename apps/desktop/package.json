@@ -1,0 +1,11 @@
+{
+  "name": "@meow-debate-assistant/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/dev-server.ts",
+    "build": "tsx src/build.ts",
+    "tauri": "echo 'Tauri CLI will be wired after Rust toolchain setup'"
+  }
+}

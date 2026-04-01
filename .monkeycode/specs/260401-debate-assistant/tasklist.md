@@ -1,10 +1,10 @@
 # 需求实施计划
 
-- [ ] 1. 搭建桌面端项目骨架与共享核心模块
+- [x] 1. 搭建桌面端项目骨架与共享核心模块
   - 创建基于 `Tauri + React + TypeScript` 的目录结构，划分 `apps/desktop`、`packages/core`、`packages/integrations`、`packages/workflows`，对应设计中的桌面壳、共享核心服务与适配层，覆盖 Requirement 11.1、11.2 与设计文档 Architecture。
   - 定义事件总线、模块注册、配置加载与依赖注入边界，为 `audio-capture`、`asr-orchestrator`、`argument-parser`、`fallacy-engine`、`seat-strategy-engine`、`tactic-card-generator`、`timeline-engine`、`knowledge-base` 提供统一接口，覆盖 Requirement 8.1、10.3 与设计文档 Components and Interfaces。
   - 集成基础代码规范、类型检查、构建脚本与桌面端开发命令，为后续自动提交脚本与 CI 铺路，覆盖 Requirement 12.1、12.2、11.1。
-  - [ ] 1.1 为模块注册和事件总线编写单元测试与属性测试
+  - [x] 1.1 为模块注册和事件总线编写单元测试与属性测试
     - 验证事件顺序不乱序、模块初始化依赖满足、重复注册被拒绝，对应设计文档 Correctness Properties 4。
 
 - [ ] 2. 实现核心数据模型、会话配置与赛制模板校验

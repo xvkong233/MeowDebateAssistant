@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Meow Debate Assistant",
+  "version": "0.1.0",
+  "identifier": "ai.monkeycode.meowdebateassistant",
+  "build": {
+    "beforeDevCommand": "npm run dev --workspace @meow-debate-assistant/desktop",
+    "beforeBuildCommand": "npm run build --workspace @meow-debate-assistant/desktop",
+    "devUrl": "http://localhost:5173",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Meow Debate Assistant",
+        "width": 1440,
+        "height": 960,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app", "msi", "dmg"],
+    "icon": []
+  }
+}

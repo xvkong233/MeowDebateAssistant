@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "ignoreDeprecations": "6.0",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@meow-debate-assistant/core": [
+        "packages/core/src/index.ts"
+      ],
+      "react": [
+        "apps/desktop/src/shims/react.ts"
+      ],
+      "react-dom/client": [
+        "apps/desktop/src/shims/react-dom-client.ts"
+      ],
+      "react/jsx-runtime": [
+        "apps/desktop/src/shims/react-jsx-runtime.ts"
+      ],
+      "vite": [
+        "apps/desktop/src/shims/vite.ts"
+      ]
+    }
+  },
+  "include": [
+    "apps/**/*.ts",
+    "apps/**/*.tsx",
+    "apps/**/*.d.ts",
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.d.ts"
+  ]
+}
